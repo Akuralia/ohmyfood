@@ -1,17 +1,20 @@
-@import "./base/typography";
+@import "utils/variables.scss" ;
+@import "utils/mixins.scss" ;
 
-@import "./components/button";
-@import "./components/loader";
+@import "base/typography.scss" ;
 
-@import "./layout/container";
-@import "./layout/footer";
-@import "./layout/header";
-@import "./layout/navigation";
+@import "components/button.scss" ;
+@import "components/loader.scss" ;
 
-@import "./pages/home";
-@import "./pages/restaurants";
+@import "layout/container.scss" ;
+@import "layout/footer.scss" ;
+@import "layout/header.scss" ;
+@import "layout/navigation.scss" ;
 
-@import "./utils/fonctions";
-@import "./utils/mixins";
-@import "./utils/variables";
+@import "pages/home.scss" ;
+@import "pages/restaurants.scss" ;
+
+@import "utils/fonctions.scss" ;
+
+
 
