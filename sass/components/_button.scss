@@ -1,0 +1,19 @@
+
+button{
+        padding: 15px 25px 15px 25px;
+        border-radius: 50px;
+        border-style: none;
+        background: linear-gradient(175deg, $color-secondary  0%, $color-primary  100%);
+        @include index-shadow;
+        color: $text-color;
+        cursor: pointer;
+
+        &:hover{
+            background: linear-gradient(
+                175deg,
+                lighten(rgba(255, 121, 218, 1), 10%) 0%,
+                lighten(rgba(147, 86, 220, 1), 10%) 100%
+            );
+            box-shadow: 0px 4px 10px 1px rgb(0 0 0 / 47%);
+        }
+}

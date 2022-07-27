@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 .location{
     display: flex;
     justify-content: center;
@@ -35,15 +39,6 @@
     margin-top: 30px;
     margin-bottom: 80px;
 
-    button{
-        padding: 15px 25px 15px 25px;
-        border-radius: 50px;
-        border-style: none;
-        background: linear-gradient(175deg, $color-secondary  0%, $color-primary  100%);
-        @include index-shadow;
-        color: $text-color;
-    }
-
 }
 
 .choice_container{
@@ -52,6 +47,7 @@
     width: 100%;
     align-items: center;
     gap: 30px;
+    margin-bottom: 150px;
 
     h2{
         display: flex;
@@ -68,6 +64,15 @@
     @include index-shadow;
     border-radius: 20px;
     width: 370px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: lighten($color: #FF79DA, $amount: 23%);
+
+        i{
+        color: $color-primary;
+        }
+    }
 
     p{
         display: flex;
@@ -100,6 +105,11 @@
         text-decoration: none;
         color: black;
     }
+
+    h1{
+        display: flex;
+        margin-left: -120px;
+    }
 }
 
 .home_card{
@@ -116,7 +126,44 @@
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
+
+    i{
+        display: flex;
+    }
+
+    input{
+        position: absolute;
+        right: 7%;
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .heart_empty {
+            transition-duration: 0.5s;
+            opacity: 0;
+        }
+
+        &:checked ~ .heart_full {
+            transition-duration: 0.5s;
+            opacity: 1;
+        }
+
+    }
+
+    .heart_full{
+        opacity: 0;
+        transition-duration: 0.5s;
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC),
+        to(#FF79DA));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
+
+
 
 .text_over{
 position: absolute;
@@ -150,7 +197,6 @@ align-items: center;
         font-size: 22px;
         position: absolute;
         left: 86%;
-
 
     }
 }
