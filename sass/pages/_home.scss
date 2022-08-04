@@ -2,6 +2,83 @@ html{
     overflow-x: hidden;
 }
 
+body{
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+/*
+.loading{
+    display: block;
+    background-color: rgba(235, 232, 232, 0.534);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    ;
+    position: absolute;
+    z-index: 1;
+}
+
+.sk-cube-grid {
+    display: block;
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+
+width: 33%;
+height: 33%;
+    z-index: 1;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+*/
+
+
+
+
+
+
+
+.index_link{
+    display:block;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    position: absolute;
+}
 .location{
     display: flex;
     justify-content: center;
@@ -37,7 +114,7 @@ html{
 
 .button{
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
 }
 
@@ -116,6 +193,7 @@ html{
     display: flex;
     flex-direction: column;
     width: 300px;
+    height: 180px;
     @include index-shadow;
     position: relative;
     border-radius: 15px;
