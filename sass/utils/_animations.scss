@@ -48,3 +48,14 @@
             transform: scale3D(0, 0, 1);
   } 
 }
+
+@keyframes loading{
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}

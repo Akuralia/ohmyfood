@@ -16,7 +16,7 @@
         <img src="../public/img/logo/ohmyfood.png" alt="logo Ohmyfood">
     </header>
 
-    <div class="banner">
+    <div class="banner_restaurant">
         <img src="../public/img/restaurants/palette_du_gout.jpg" alt="Illustation restaurant Palette du goût">
     </div>
 
@@ -24,7 +24,11 @@
 
     <div class="restaurant_title">
         <h2>À la française</h2>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart_restaurant">
+            <input type="checkbox">
+                <i class="fa-regular fa-heart heart_empty"></i>
+                <i class="fa-solid fa-heart heart_full"></i>
+        </div>
     </div>
 
 <div class="menu">
@@ -144,26 +148,20 @@
 
 </main>
 
-<footer id="footer" class="footer">
+<footer id="footer">
     <h3>ohmyfood</h3>
-    
-    <ul>
-        <li>
-            <a href="#footer">
-                <i class="fa-solid fa-utensils"></i> 
-                <p>Proposer un restaurant</p>
-            </a>
-        </li>
-        <li>
-            <a href="#footer">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p>Devenir partenaire</p>
-            </a>
-        </li>
-        <li> <a href="#footer">Mentions légales</a> </li>
-        <li> <a href="mailto:contact@ohmyfood.com">Contact</a> </li>
-    </ul>
+    <a href="#footer">
+        <i class="fa-solid fa-utensils"></i> 
+        <p>Proposer un restaurant</p>
+    </a>
+    <a href="#footer">
+        <i class="fa-solid fa-handshake-angle"></i>
+        <p>Devenir partenaire</p>
+    </a>
+    <a href="#footer"><p>Mentions légales</p></a>
+    <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
 </footer>
+
 
     <script src="https://kit.fontawesome.com/3c56dfb362.js" crossorigin="anonymous"></script>
 </body>
