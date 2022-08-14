@@ -136,6 +136,7 @@
     justify-content: space-between;
     overflow: hidden;
     @include index-shadow;
+    opacity: 0;
 
     &:hover{
         .item_check{
