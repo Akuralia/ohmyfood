@@ -98,9 +98,10 @@ header{
 
     @include desktop-only{
         flex-direction: row;
-        width: 85%;
+        width: 87%;
         gap: 40px;
         margin-bottom: 50px;
+        margin: auto;
         span{
             margin: auto;
         }
@@ -118,7 +119,6 @@ header{
     height: 75px;
     background-color: $background;
     cursor: pointer;
-
     &:hover{
         background-color: lighten($color: #FF79DA, $amount: 23%);
         transition-duration: 250ms;
@@ -144,9 +144,10 @@ header{
         font-size: 20px;
         color: grey;
     }
-
+    @include desktop-only{
+        width: 327px;
 }
-
+}
 
 .home_card_container{
     display: flex;
